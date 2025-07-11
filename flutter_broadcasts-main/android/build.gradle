@@ -27,12 +27,22 @@ apply plugin: 'kotlin-android'
 android {
     compileSdkVersion 31
     namespace "de.kevlatus.flutter_broadcasts"
-    
+
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
+
     defaultConfig {
         minSdkVersion 24
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
     }
 }
 
