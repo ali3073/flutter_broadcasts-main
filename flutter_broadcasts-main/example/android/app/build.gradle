@@ -27,8 +27,7 @@ apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
     compileSdkVersion 30
-    namespace = "de.kevlatus.flutter_broadcasts_example"
-
+    namespace "de.kevlatus.flutter_broadcasts"
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
